@@ -1,8 +1,8 @@
 export const config = {
   siteMeta: {
-    title: "Team Blog Hub",
-    teamName: "catnose Inc.",
-    description: "RSS based blog starter kit for teams.",
+    title: "501A Blog",
+    teamName: "501A Designs",
+    description: "A blog site that contains all of my blog articles posted in different platforms",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
@@ -10,16 +10,16 @@ export const config = {
       : "http://localhost:3000",
   headerLinks: [
     {
-      title: "About",
-      href: "/about",
+      title: "Personal Site",
+      href: "https://501a.netlify.app/",
     },
-    {
-      title: "Company",
-      href: "https://zenn.dev/catnose99/articles/cb72a73368a547756862",
-    },
+    // {
+    //   title: "About",
+    //   href: "/about",
+    // },
     {
       title: "GitHub",
-      href: "https://github.com/catnose99/team-blog-hub",
+      href: "https://github.com/501A-Designs/501a-blog",
     },
   ],
 };

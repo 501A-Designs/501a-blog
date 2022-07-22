@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&family=Prompt&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -20,8 +23,8 @@ body {
   background: var(--color-base-background);
   word-break: break-word;
   word-wrap: break-word;
-  font-family: "Inter", "BlinkMacSystemFont", "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans", Meiryo, sans-serif;
+	font-family: "Prompt", 'Noto Sans JP', sans-serif;
+  // font-family: "Inter", "BlinkMacSystemFont", "Hiragino Kaku Gothic ProN","Hiragino Sans", Meiryo, sans-serif;
 }
 
 img {

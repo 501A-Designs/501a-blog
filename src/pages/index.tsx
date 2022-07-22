@@ -33,7 +33,7 @@ const Page: NextPage = () => {
         </ContentWrapper>
       </section>
 
-      <section className="home-members">
+      {/* <section className="home-members">
         <ContentWrapper>
           <div className="home-section-title-container">
             <h2 className="home-section-title">Members</h2>
@@ -48,14 +48,13 @@ const Page: NextPage = () => {
             </UndoWrapForScroll>
           </div>
         </ContentWrapper>
-      </section>
+      </section> */}
 
       <section className="home-posts">
         <ContentWrapper>
           <div className="home-section-title-container">
             <h2 className="home-section-title">Articles</h2>
           </div>
-
           <div className="home-posts-container">
             <PostList items={posts as PostItem[]} />
           </div>
