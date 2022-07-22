@@ -39,7 +39,7 @@ $side-padding-sm: 1rem;
 }
 
 .post-link__author-img {
-  border-radius: var(--border-radius);
+  border-radius: 5px;
   border: solid 1px var(--color-border-lighter);
   margin-right: 0.7rem;
 }
@@ -48,16 +48,21 @@ $side-padding-sm: 1rem;
   flex: 1;
 }
 
-.post-link__site {
+.post-link__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 0.9rem;
+}
+.post-link__site {
   color: var(--color-base-text-lighter);
   font-size: 12px;
   display: flex;
   align-items: center;
 }
 .post-link__site-favicon {
-  border-radius: 3px;
-  margin-right: 6px;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 .post-link__new-label {
   position: absolute;

@@ -21,7 +21,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
 
   return (
     <article className="post-link">
-      <Link href={getMemberPath(member.id)} passHref>
+      {/* <Link href={getMemberPath(member.id)} passHref>
         <a className="post-link__author">
           <img
             src={member.avatarSrc}
@@ -37,21 +37,26 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
             </time>
           </div>
         </a>
-      </Link>
+      </Link> */}
       <a href={link} className="post-link__main-link">
         <h2 className="post-link__title">{title}</h2>
-        {hostname && (
-          <div className="post-link__site">
-            <img
-              src={getFaviconSrcFromOrigin(origin)}
-              width={14}
-              height={14}
-              className="post-link__site-favicon"
-              alt={hostname}
-            />
-            {hostname}
-          </div>
-        )}
+        <div  className="post-link__container">
+          {hostname && (
+            <div className="post-link__site">
+              <img
+                src={getFaviconSrcFromOrigin(origin)}
+                width={20}
+                height={20}
+                className="post-link__site-favicon"
+                alt={hostname}
+              />
+              {hostname}
+            </div>
+          )}
+          <time dateTime={isoDate} className="post-link__date">
+            {dayjs(isoDate).fromNow()}
+          </time>
+        </div>
       </a>
       {dateMiliSeconds && dateMiliSeconds > Date.now() - 86400000 * 3 && (
         <div className="post-link__new-label">NEW</div>
