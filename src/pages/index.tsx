@@ -4,12 +4,10 @@ import Link from "next/link";
 import posts from "@.contents/posts.json";
 import { config } from "@site.config";
 import { PostItem } from "@src/types";
-import { ScrollableMembers } from "@src/components/ScrollableMembers";
 import { PostList } from "@src/components/PostList";
 import { PageSEO } from "@src/components/PageSEO";
 import {
   ContentWrapper,
-  UndoWrapForScroll,
 } from "@src/components/ContentWrapper";
 
 const Page: NextPage = () => {
@@ -32,23 +30,6 @@ const Page: NextPage = () => {
           )}
         </ContentWrapper>
       </section>
-
-      {/* <section className="home-members">
-        <ContentWrapper>
-          <div className="home-section-title-container">
-            <h2 className="home-section-title">Members</h2>
-            <Link href="/members">
-              <a className="home-section-link">See Details →</a>
-            </Link>
-          </div>
-
-          <div className="home-members-container">
-            <UndoWrapForScroll>
-              <ScrollableMembers />
-            </UndoWrapForScroll>
-          </div>
-        </ContentWrapper>
-      </section> */}
 
       <section className="home-posts">
         <ContentWrapper>

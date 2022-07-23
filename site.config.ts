@@ -13,10 +13,10 @@ export const config = {
       title: "Personal Site",
       href: "https://501a.netlify.app/",
     },
-    // {
-    //   title: "About",
-    //   href: "/about",
-    // },
+    {
+      title: "About",
+      href: "/about",
+    },
     {
       title: "GitHub",
       href: "https://github.com/501A-Designs/501a-blog",

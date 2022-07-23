@@ -9,7 +9,9 @@
     margin-top: 1.2rem;
   }
   a {
-    color: var(--color-primary-text);
+    color: var(--color-base-text-lighter);
+    cursor: pointer;
+    text-decoration: underline;
   }
 }
 .about__actions {
